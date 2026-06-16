@@ -654,9 +654,8 @@ PRICING ↓
 .plan__top {
     display: flex;
     flex-direction: column;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
     text-transform: uppercase;
+    padding: 0 2
     line-height: 1.625;
 }
 
@@ -724,7 +723,7 @@ PRICING ↓
     background-color: #f7fafc;
 }
 
-.plan:nth-child(2) .plan__top, .plan:nth-child(2) .plan__middle, .plan:nth-child(2) .plan__bottom, .plan:nth-child(2) .plan__stripe {
+.plan:nth-child(2) {
     background: linear-gradient(135deg, rgb(76, 81, 191) 0%, rgb(102, 126, 234) 100%);
 }
 
