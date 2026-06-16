@@ -611,7 +611,7 @@ PRICING ↓
     display: flex;
     position: relative;
     flex-direction: row;
-    width: 100%;
+    gap: 32px;
     justify-content: space-between;
 }
 
@@ -619,14 +619,13 @@ PRICING ↓
     position: relative;
     margin-top: 4rem;
     display: flex;
-    width: 100%;
+    flex: 1;
     max-width: 24rem;
     flex-direction: column;
     border-radius: 0.5rem;
     background-color: rgb(255 255 255);
     padding-left: 2rem;
     padding-right: 2rem;
-    margin-right: 2rem;
     padding-top: 0.5rem;
     text-align: center;
     color: rgb(26 32 44);
