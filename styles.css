@@ -17,6 +17,7 @@ body {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
+    height: 100%;
 }
 
 .row__narrow {
@@ -531,7 +532,7 @@ VALUES ↓
     display: flex;
     flex-direction: column;
     width: 50%;
-    padding: 32px 64px 32px 0;
+    padding: 0;
     align-items: flex-start;
 }
 
@@ -556,14 +557,9 @@ VALUES ↓
     max-width: 80%;
 }
 
-.values__img {
-position: absolute;
-}
-
 .values__img--img {
-    width: 50%;
+    width: 100%;
     z-index: 1;
-    transform: translateX(550px);
 }
 
 .value__img--wrapper-1 {
@@ -938,6 +934,7 @@ START / CALL TO ACTION ↓
     margin: 1px;
     z-index: 2;
     text-align: center;
+    width: 100%;
 }
 
 .start__buttons {
@@ -1112,6 +1109,31 @@ MOBILE RESPONSIVENESS ↓
         font-size: 30px;
     }
 
+    .header--left {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+    }
+
+    .header__input--email {
+        position: static;
+        height: 68px;
+    }
+
+    .input__button {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .header__email--btn {
+        margin: 0;
+        margin-top: 12px;
+        height: 68px;
+        width: 100%;
+    }
+
     .header__description--para {
         font-size: 16px;
         margin: 20px 0;
@@ -1169,16 +1191,131 @@ MOBILE RESPONSIVENESS ↓
         display: flex;
         flex-direction: column;
         align-items: center;
+        width: 90%;
     }
 
+    .header__input--email {
+        position: static;
+        height: 68px;
+    }
+
+    .input__button {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .header__email--btn {
+        margin: 0;
+        margin-top: 12px;
+        height: 68px;
+        width: 100%;
+    }
+
+    .section__title {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .section__tag {
+        text-align: center;
+    }
+
+    .section__para {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .btn {
+        line-height: 1.5;
+    }
+
+    .quality__description {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+     }
     .quality__description, .quality__img--wrapper, .steps__description, .steps__img--wrapper, .values__description, .values__img, .testimonials__description, .testimonials__img {
         width: 100%;
-        max-width: 448px;
+    }
+
+     #steps img {
+        padding: 32px 16px;
+        transform: translateX(90px);
+        
+    }
+
+    .steps__description {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .step {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+    }
+
+    .values__description {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+    }
+    
+    .values__list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .value__paras {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
     }
 
     .testimonials__description {
         padding-left: 0;
     }
+
+    .testimonial__rating {
+        text-align: center;
+
+    }
+
+    .testimonial__bottom {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 4px;
+    }
+
+    .testimonial__profile {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .testimonial__buttons {
+        margin-top: 32px;
+    }
+
+    .testimonial__rating {
+        font-size: 12px;
+    }
+
+    .testimonial__rating p {
+        font-size: 14px;
+    }
+
+    .start__button:nth-child(1) {
+        margin-right: 0;
+        margin-top: 12px;
+    }
+    
 
     .footer__columns {
         justify-content: flex-start;
@@ -1190,7 +1327,25 @@ MOBILE RESPONSIVENESS ↓
     }
 
     .footer__copyright, .footer__socials {
-        margin-top: 32px;
+        margin: 32px 0;
+    }
+
+    .footer__columns {
+        justify-content: center;
+        padding: 40px;
+    }
+
+    .footer__column {
+        width: auto;
+        padding: 0 16px;
+        text-align: center;
+        align-items: center;
+    }
+
+    .footer__copyright {
+        font-size: 14px;
+        text-align: center;
+        line-height: 1.5;
     }
 }
 
@@ -1247,7 +1402,7 @@ MOBILE RESPONSIVENESS ↓
 
     #values .row {
         display: flex;
-        flex-direction: column;
+        flex-direction: column-reverse;
 
     }
 
