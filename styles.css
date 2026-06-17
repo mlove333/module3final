@@ -1183,6 +1183,15 @@ MOBILE RESPONSIVENESS ↓
     .footer__columns {
         justify-content: flex-start;
     }
+
+    .footer__bottom {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer__copyright, .footer__socials {
+        margin-top: 32px;
+    }
 }
 
 @media(max-width: 640px) {
@@ -1302,5 +1311,18 @@ MOBILE RESPONSIVENESS ↓
     .footer__columns {
         justify-content: center;
         padding: 40px;
+    }
+
+    .footer__column {
+        width: auto;
+        padding: 0 16px;
+        text-align: center;
+        align-items: center;
+    }
+
+    .footer__copyright {
+        font-size: 14px;
+        text-align: center;
+        line-height: 1.5;
     }
 }
